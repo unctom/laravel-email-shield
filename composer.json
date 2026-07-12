@@ -1,17 +1,17 @@
 {
-    "name": ":vendor_slug/:package_slug",
-    "description": ":package_description",
+    "name": "unctom/laravel-email-shield",
+    "description": "Extensible email validation and bulk list cleansing for your php project.",
     "keywords": [
-        ":vendor_name",
+        "unctom",
         "laravel",
-        ":package_slug"
+        "laravel-email-shield"
     ],
-    "homepage": "https://github.com/:vendor_slug/:package_slug",
+    "homepage": "https://github.com/unctom/laravel-email-shield",
     "license": "MIT",
     "authors": [
         {
-            "name": ":author_name",
-            "email": "author@domain.com",
+            "name": "Thomas B.",
+            "email": "bs.thomas@hotmail.com",
             "role": "Developer"
         }
     ],
@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "VendorName\\Skeleton\\": "src/",
-            "VendorName\\Skeleton\\Database\\Factories\\": "database/factories/"
+            "Unctom\\EmailShield\\": "src/",
+            "Unctom\\EmailShield\\Database\\Factories\\": "database/factories/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "VendorName\\Skeleton\\Tests\\": "tests/",
+            "Unctom\\EmailShield\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/"
         }
     },
@@ -63,10 +63,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "VendorName\\Skeleton\\SkeletonServiceProvider"
+                "Unctom\\EmailShield\\EmailShieldServiceProvider"
             ],
             "aliases": {
-                "Skeleton": "VendorName\\Skeleton\\Facades\\Skeleton"
+                "EmailShield": "Unctom\\EmailShield\\Facades\\EmailShield"
             }
         }
     },
