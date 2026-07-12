@@ -22,5 +22,5 @@ return [
     'mailcatch.com',
     'maildrop.cc',
     'fakeinbox.com',
-    'dropoffs.org'
+    'dropoffs.org',
 ];

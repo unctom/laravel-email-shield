@@ -25,7 +25,7 @@ class CheckMxRecords
             return checkdnsrr($domain, 'MX') || checkdnsrr($domain, 'A');
         });
 
-        if (!$isValid) {
+        if (! $isValid) {
             $context->fail(self::class, 'The email address is invalid or not active');
 
             return $context;
